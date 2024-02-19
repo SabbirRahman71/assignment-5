@@ -95,7 +95,7 @@ function applyCoupon() {
     getElementById("coupon-div").classList.add("hidden");
     discount.innerText = totalPrice * (15 / 100);
     getElementById("discount-div").classList.remove("hidden");
-  } else if (couponCode == "COUPLE20") {
+  } else if (couponCode == "Couple 20") {
     const grandPrice = totalPrice - totalPrice * (20 / 100);
     grandtotal.innerText = grandPrice;
     getElementById("coupon-div").classList.add("hidden");
