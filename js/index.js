@@ -121,3 +121,6 @@ getElementById("phone-number").addEventListener("keyup", function (e) {
 function showModal() {
   getElementById("modal").classList.remove("hidden");
 }
+function reload() {
+  window.location.reload();
+}
