@@ -75,7 +75,11 @@ function totalPrice() {
 
 getElementById("coupon-check").addEventListener("keyup", function (e) {
   let totalPrice = getElementById("total-price").innerText;
-  if (e.target.value !== "" && parseInt(totalPrice) !== 0) {
+  if (
+    e.target.value !== "" &&
+    parseInt(totalPrice) !== 0 &&
+    parseInt(seatBooked) == 4
+  ) {
     getElementById("apply").removeAttribute("disabled");
   }
 });
